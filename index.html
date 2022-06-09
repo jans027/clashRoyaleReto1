@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/FavIcon.png" type="image/x-icon">
+    <title>Clash Royale</title>
+</head>
+
+<body>
+    <div class="tarjetaMadre">
+        <div class="Carousel">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">&#60;
+            </button>
+            <div class="slick-list" id="slick-list">
+                <div class="slick-track" id="track">
+
+                </div>
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">&#62;
+            </button>
+        </div>
+        <div class="detallePersonaje" id="detallePersonaje">
+
+        </div>
+
+        <script src="script/recogerdatos.js"></script>
+        <script src="script/slider3.js"></script>
+        <script src="script/indexFinal.js" type="module"></script>
+</body>
+
+</html>
