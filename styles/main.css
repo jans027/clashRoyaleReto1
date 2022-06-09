@@ -1,0 +1,138 @@
+@import"detallePersonaje.css";
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-image: url(../images/background.png);
+    font-family: 'Skranji', cursive;
+}
+.Carousel{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.ventanaModal{
+    margin-top: -50px;
+}
+form button{
+    position: absolute;
+    margin-top: 450px;
+    border: 2px solid red;
+}
+.ventanaModal a picture img{
+    margin-bottom: 50px;
+}
+
+.tarjetaMadre{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.Carousel{
+    width: 100%;
+    margin: 0 60px;
+}
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 350px;
+    padding: 0 38px 0 0;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.slick button{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    margin-top: 330px;
+    left: 25%;
+    color: #ffffff;
+    padding: 4.5px 50px;
+    background-color: rgba(18, 46, 205, 0.85);
+    border-radius: 10px;
+}
+.slick p{
+    display: flex;
+    flex-direction: column-reverse;
+    position:static;
+    margin: 0 10px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
+h3{
+    position:static;
+    margin-bottom: 1px;
+}
+
+.slick a img{
+    height: 350px;
+    width: 350px;
+    border-radius: 4px;
+    /* .........object fit .......... */
+    object-fit: contain;
+    transition: .3s ease-in-out;
+}
+
+.slick a img:hover{
+    opacity: .75;
+}
+
+/* buttons */
+
+.slick-arrow{
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: rgba(18, 46, 205, 0.85);
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+.slick-arrow:hover{
+    background-color: rgba(18, 46, 205, 0.70);
+    border:2px solid rgba(18, 46, 205, 0.85);;
+}
+.slick-prev{
+    transform: translateY(350%);
+    left: 27%;
+}
+.slick-next{
+    transform: translateY(-430%);
+    right: 27%;
+}
